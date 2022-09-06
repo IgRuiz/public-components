@@ -1,7 +1,7 @@
 {
   "name": "public-components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "Some fun components used mainly in my website",
   "author": "Ignacio Ruiz",
   "keywords": [
