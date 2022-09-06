@@ -2,7 +2,26 @@
   "name": "public-components",
   "version": "0.1.0",
   "private": true,
+  "description": "Some fun components used mainly in my website",
+  "author": "Ignacio Ruiz",
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
+  "main": "dist/index.tsx",
+  "module": "dist/index.tsx",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgRuiz/public-components.git"
+  },
   "dependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/preset-env": "^7.19.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -17,7 +36,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
